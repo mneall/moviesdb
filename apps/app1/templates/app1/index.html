@@ -7,6 +7,9 @@
 	<h3>Movie Database</h3>
 
 	<h4>Add a Movie to the Database</h4>
+	{% for item in movies %}
+	<p>{{movies.title}}</p>
+	{% endfor %}
 	<form>
 		{% csrf_token %}
 		<label for="title">Title:</label>
